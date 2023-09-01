@@ -1,0 +1,19 @@
+{
+    "name": "Alt Text Remover",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Removes alt text 'CDN media' from images",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
